@@ -1,0 +1,25 @@
+#yaml方式属性配置 会和 properties方式取并集、重名以properties为准
+#jdbc:
+#  driverClass: com.mysql.jdbc.Driver
+#  jdbcUrl: jdbc:mysql://localhost:3306/demo?useUnicode=true&characterEncoding=utf8&serverTimezone=GMT
+#  user: root
+#  password: 123456
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/demo?useUnicode=true&characterEncoding=utf8&serverTimezone=GMT
+    username: root
+    password: 123456
+        
+  jpa:
+    hibernate:
+      ddl-auto: update
+#      naming:
+#        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+      
+    show-sql: true
+    
+  servlet:
+    multipart:
+      enabled: true
