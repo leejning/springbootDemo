@@ -40,7 +40,7 @@
 		<dependency>
 			<groupId>com.alibaba</groupId>
 			<artifactId>fastjson</artifactId>
-			<version>1.2.58</version>
+			<version>1.2.83</version>
 		</dependency>
 		<!-- 从Java 8迁移到Java 11时需要注意，很多东西都没有开箱即用。 -->
 		<dependency>
